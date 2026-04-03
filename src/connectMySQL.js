@@ -6,11 +6,11 @@ export default async function conection() {
         return await global.poolConexoes.getConnection();
     } else {
         global.poolConexoes = mysql.createPool({
-            host: '64.181.163.74',
-            user: 'rootR123',
-            database: 'Testando',
+            host: '',
+            user: '',
+            database: '',
             port: 3306,
-            password: 'out123456',
+            password: '',
             waitForConnections: true,
             connectionLimit: 500,
             maxIdle: 500, // max idle connections, the default value is the same as `connectionLimit`
